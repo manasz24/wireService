@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title='getObjectInfo adapter with wire Function'>
+           Default Record Type ID {RecordTypeId}
+    </lightning-card>
+    <lightning-card title='getObjectInfo adapter with wire property'>
+        <template if:true={objectInfoproperty.data}>
+            <div>Default Record Type ID {objectInfoproperty.data.defaultRecordTypeId}</div>
+            <div>Object API Name is {objectInfoproperty.data.apiName}</div>
+        </template>
+    </lightning-card>
+</template>

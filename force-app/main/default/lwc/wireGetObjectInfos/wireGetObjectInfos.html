@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title='getObjectInfos adapter for multiple object'>
+        <template if:true={objectinfos}>
+            <template for:each={objectinfos.results} for:item="obj">
+                
+                    <div key={obj.result.apiName} >
+                        <div> object API NAME = {obj.result.apiName}</div>
+                        <div> object Default Record Type = {obj.result.defaultRecordTypeId}</div>
+                    </div>
+                
+
+            </template> 
+        </template>
+    </lightning-card>
+</template>
