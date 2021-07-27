@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title='get Record Ui Demo'>
+        <template for:each={formFields} for:item="field">
+            <div key={field.label}>
+                <p><strong>{field.label}</strong></p>
+                <p>{field.value}</p>
+            </div>
+        </template>
+    </lightning-card>
+</template>
